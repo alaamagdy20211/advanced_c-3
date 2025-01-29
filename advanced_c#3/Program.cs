@@ -42,18 +42,16 @@ namespace advanced_c_3
 
         static List<int> FindMissingNumbers(int[] numbers, int N)
         {
-            // Create a HashSet for the numbers in the array for O(1) lookup
+            
             HashSet<int> numberSet = new HashSet<int>(numbers);
 
-            // List to store the missing numbers
             List<int> missingNumbers = new List<int>();
 
-            // Check each number from 1 to N
             for (int i = 1; i <= N; i++)
             {
                 if (!numberSet.Contains(i))
                 {
-                    missingNumbers.Add(i); // Add missing number to the list
+                    missingNumbers.Add(i); 
                 }
             }
 
@@ -72,7 +70,7 @@ namespace advanced_c_3
             }
         }
 
-        // Method to retrieve an employee's name by ID
+        
         static string RetrieveEmployee(SortedList<int, string> directory, int id)
         {
             if (directory.ContainsKey(id))
@@ -85,7 +83,7 @@ namespace advanced_c_3
             }
         }
 
-        // Method to remove an employee by ID
+        
         static void RemoveEmployee(SortedList<int, string> directory, int id)
         {
             if (directory.ContainsKey(id))
@@ -99,7 +97,6 @@ namespace advanced_c_3
             }
         }
 
-        // Method to display all employees
         static void DisplayEmployees(SortedList<int, string> directory)
         {
             foreach (var employee in directory)
