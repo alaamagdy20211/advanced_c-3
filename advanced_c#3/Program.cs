@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-
+//
 namespace advanced_c_3
 {
     internal class Program
